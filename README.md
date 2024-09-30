@@ -62,30 +62,42 @@ print("Hello World")
 ![Снимок экрана 2024-10-01 023112](https://github.com/user-attachments/assets/83deb8b2-e2e0-47df-99a2-a721854883cc)
 
 ## Задание 2
-### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
+### Написать программу Hello World на C# с запуском на Unity.
 
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
+- Зайти в приложение Unity Hub, нажать кнопку "New Project" (шаг 1.)
 
-```py
+![Снимок экрана 2024-10-01 023806](https://github.com/user-attachments/assets/420957c8-7e89-429e-bf95-74eeb1791e01)
 
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
+- Выбрать вариант с встроенным визуализатором "3D (Built-in Render Pipeline)" (шаг 2.), переименовать проект по своему выбору и нажать кнопку "Create Project" (шаг 3.)
+
+![Снимок экрана 2024-10-01 023918](https://github.com/user-attachments/assets/3fcbc606-094c-4f10-909e-3a0aaf2ff88d)
+
+- Открыть проект и внутри приложения, в папке "Assets/Scenes" создать "C# Script" (шаг 4.)
+
+![Снимок экрана 2024-10-01 024341](https://github.com/user-attachments/assets/137038c2-3f19-4bb7-99b6-0118acc35989)
+
+- Открыть созданный файл и изменить метод "Start"
+
+```cs
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    // В этот метод
+    void Start()
+    {
+        print("Hello World!"); //Вписать команду "Print" со строкой "Hello World!"
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
 
 ```
 
