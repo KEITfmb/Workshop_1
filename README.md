@@ -92,7 +92,6 @@ public class NewBehaviourScript : MonoBehaviour
         print("Hello World!"); //Вписать команду "Print" со строкой "Hello World!"
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -112,38 +111,10 @@ public class NewBehaviourScript : MonoBehaviour
 
 ![Снимок экрана 2024-10-01 025751](https://github.com/user-attachments/assets/4e263a2a-da01-46e6-8c5c-ddb68e3d3d78)
 
-
-## Задание 3
-### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
-
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
-
-```py
-
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
-
 ## Выводы
 
-Абзац умных слов о том, что было сделано и что было узнано.
+По итогу работы мной были изучены базовые знания создания и изменения кода на Python в Jupyter Notebook, а также создание скрипта на C# в Unity и выполнение его в проекте, путём связывания его с объектом на сцене.
+Также мной были изучены основы создания документации в репозитории GitHub и правила оформления отчёта по проделанной работе.
 
 | Plugin | README |
 | ------ | ------ |
