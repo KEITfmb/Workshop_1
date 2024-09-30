@@ -44,29 +44,22 @@
 
 ![Снимок экрана 2024-10-01 022026](https://github.com/user-attachments/assets/24aa679a-82c1-473d-b103-7b2c7252a2e8)
 
+- Создать папку UrFU/AD in GameDev (шаг 3.) и в этой папке создать файл под именем "Hello_World" с расширением ".ipynb", которое ещё называется "Notebook" (шаг 4.)
 
+![Снимок экрана 2024-10-01 022253](https://github.com/user-attachments/assets/e0d2b979-3fe4-4622-b5b8-698c17d7a4db)
+
+![Снимок экрана 2024-10-01 022510](https://github.com/user-attachments/assets/194dfdd5-32b3-4c58-858b-04557551a322)
+
+- Открыть файл "Hello_World.ipynb" и вписать в него следующий код
 ```py
 
-In [ ]:
-#Import the required modules, numpy for calculation, and Matplotlib for drawing
-import numpy as np
-import matplotlib.pyplot as plt
-#This code is for jupyter Notebook only
-%matplotlib inline
-
-# define data, and change list to array
-x = [3,21,22,34,54,34,55,67,89,99]
-x = np.array(x)
-y = [2,22,24,65,79,82,55,130,150,199]
-y = np.array(y)
-
-#Show the effect of a scatter plot
-plt.scatter(x,y)
+print("Hello World")
 
 ```
 
-- Определите связанные функции. Функция модели: определяет модель линейной регрессии wx+b. Функция потерь: функция потерь среднеквадратичной ошибки. Функция оптимизации: метод градиентного спуска для нахождения частных производных w и b.
+- Запустить код (шаг 5.) и проверить результат вывода (шаг 6.)
 
+![Снимок экрана 2024-10-01 023112](https://github.com/user-attachments/assets/83deb8b2-e2e0-47df-99a2-a721854883cc)
 
 ## Задание 2
 ### Должна ли величина loss стремиться к нулю при изменении исходных данных? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ.
